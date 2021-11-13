@@ -1,23 +1,21 @@
 <?php namespace App;
 
 /**
- * Class for managing users
- */
+ * Class for managing favourite countries
+ */ 
 
-class User implements Saveable
+class Favourite implements Saveable
 {
     private $id;
-    private $email;
-    private $username;
-    private $password;
-    private static $table = 'users';
+    private $userId;
+    private $country;
+    private static $table = 'favourites';
 
-    public function __construct($id, $email, $username, $password)
+    public function __construct($id, $userId, $country)
     {
         $this->id = $id;
-        $this->email = $email;
-        $this->username = $username;
-        $this->password = $password; 
+        $this->userId = $userId;
+        $this->country = $country;
     }
 
     public function getId()
@@ -36,9 +34,8 @@ class User implements Saveable
     {
         return [
             'id',
-            'email',
-            'username',
-            'password'
+            'userId',
+            'country'
         ];
     }
 
@@ -47,9 +44,8 @@ class User implements Saveable
     {
         return [
             $this->id,
-            $this->email,
-            $this->username,
-            $this->password
+            $this->userId,
+            $this->country
         ];
     }
 }

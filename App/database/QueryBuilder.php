@@ -186,7 +186,7 @@ class QueryBuilder
             $e->getMessage();
         }
     }
-        /**
+    /**
      * Retreive all favoutite 
      * coutries and number of users they 
      * are favourite to
