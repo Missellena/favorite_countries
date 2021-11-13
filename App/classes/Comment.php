@@ -1,5 +1,7 @@
 <?php namespace App;
 
+require 'App/interfaces/Savable.php';
+
 /**
  * Class for managing comments
  */ 
