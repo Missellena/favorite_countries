@@ -6,12 +6,14 @@
         }
     },
     "name": "elenakk/favorite_countries",
+    "description" : "App",
     "authors": [
         {
             "name": "Elena Klisarovska",
             "email": "elenaklisarovska@gmail.com"
         }
     ],
+    "license": "proprietary",
     "require": {
         "monolog/monolog": "^2.3"
     },
