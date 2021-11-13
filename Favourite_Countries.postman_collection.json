@@ -28,9 +28,31 @@
 			"name": "Get_countries",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
 				"url": {
-					"raw": ""
+					"raw": "http://localhost:8000/api/countries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"countries"
+					]
 				}
 			},
 			"response": []
@@ -41,26 +63,23 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/favourites",
+					"raw": "http://localhost:8000/api/favourites",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
+						"api",
 						"favourites"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
 					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Add_Favourite",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": ""
 				}
 			},
 			"response": []

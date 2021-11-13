@@ -189,11 +189,10 @@ class QueryBuilder
         /**
      * Retreive all favoutite 
      * coutries and number of users they 
-     * are favourite ti
+     * are favourite to
      *
-     * @param  $table is the tablename
      */
-    public function getAllFavourites($table)
+    public function getAllFavourites()
     {
         try {
             $statement = $this->pdo->prepare("SELECT country, count(id) AS c FROM favourites GROUP BY country LIMIT 7");

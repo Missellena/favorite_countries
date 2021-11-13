@@ -6,7 +6,7 @@ Controller handling the statistics page
 
 if (isset($_SESSION['user_session'])) {
 
-    $result = $app['database']->getAllFavourites('favourites');
+    $result = $app['database']->getAllFavourites();
     include 'App/views/statistics.view.php';
 } 
 else

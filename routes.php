@@ -9,3 +9,7 @@ $router->get('remove', 'App/controllers/Remove.php');
 $router->post('comment', 'App/controllers/Comment.php');
 $router->get('statistics', 'App/controllers/statistics.php');
 $router->get('404', 'App/controllers/404.php');
+
+$router->get('api/countries', 'App/controllers/Api/Countries.php');
+$router->get('api/favourites', 'App/controllers/Api/Favourites.php');
+
